@@ -1,0 +1,22 @@
+@use 'base/mixins' as m;
+
+.barra {
+    display: flex;
+    flex-direction: column;
+
+    @include m.tablet {
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .logo {
+        margin: 0 auto;
+        width: 50%;
+
+        @include m.tablet {
+            margin: 0;
+            width: 20rem;
+        }
+    }
+}
